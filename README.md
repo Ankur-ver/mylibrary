@@ -8,23 +8,26 @@ To install the library, use npm:
 
 ```bash
 npm install physicslibrary
-
+```
 Include the Library :
 using a module bundler like Webpack, import the library:
 ```bash
 import { Particle, Vector } from 'physicslibrary';
 
+```
 For commonJS(Node.js Environment) :
 ```bash
 const { Vector, Particle } = require('physicslibrary');
 
 const v = new Vector(a,b);
 const p = new Particle(v, new Vector(a, b), m);
-
+```
 For UMD (Browser environment) :
+
 ```bash
   <script src="node_modules/physicslibrary/dist/bundle.js"></script>
 <script src="your script"></script>
+```
 Update and Render :
 ```bash
 function update() {
@@ -42,6 +45,7 @@ function animate() {
 }
 
 animate();
+```
 # API Documentation
 
 ## `Vector`
