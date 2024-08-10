@@ -1,0 +1,8 @@
+# Ignore unnecessary files and directories
+node_modules/
+src/
+test/
+examples/
+webpack.config.js
+babel.config.json
+README.md (optional if you want to include)
