@@ -1,0 +1,41 @@
+{
+  "name": "physicslibrary",
+  "version": "1.1.2",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build"  
+  },
+  "keywords": [
+    "physics",
+    "library",
+    "simulation" 
+  ],
+  "author": "Ankur",
+  "license": "MIT",
+  "description": "JavaScript library for physics simulation",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "babel-loader": "^9.1.3",
+    "compression-webpack-plugin": "^11.1.0",
+    "jest": "^29.7.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "eslint": "^8.0.0"  
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "webpack-node-externals": "^3.0.0"
+  }
+}
